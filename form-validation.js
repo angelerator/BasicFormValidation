@@ -4,6 +4,8 @@ function validate(){
   var passEntered = document.getElementById("pass").value;
 
   if(userEntered.length >= 6){  //if username is valid
+    document.getElementById("usernameError").classList.remove("shown-message");
+    document.getElementById("usernameError").classList.add("hidden-message");
     document.getElementById("usernameGroup").classList.add("has-success");
   }
   else{
@@ -22,5 +24,9 @@ function validate(){
     document.getElementById("passwordError").classList.add("shown-message");
   //Turn the password items red
     document.getElementById("passwordGroup").classList.add("has-error");
+  }
+  else{
+    document.getElementById("passwordError").classList.remove("shown-message");
+    document.getElementById("passwordError").classList.add("hidden-message");
   }
 }
