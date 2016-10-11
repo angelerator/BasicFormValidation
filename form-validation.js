@@ -28,5 +28,6 @@ function validate(){
   else{
     document.getElementById("passwordError").classList.remove("shown-message");
     document.getElementById("passwordError").classList.add("hidden-message");
+    document.getElementById("passwordGroup").classList.add("has-success");
   }
 }
